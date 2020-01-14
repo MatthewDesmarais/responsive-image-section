@@ -1,5 +1,15 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
   box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   font-family: sans-serif;
   line-height: 1.5;
 }
@@ -10,6 +20,7 @@ html {
 
 body {
   background-color: #e2e2e2;
+  margin: 0;
 }
 
 h1 {
@@ -59,4 +70,12 @@ img {
   padding-top: 1rem;
   display: inline-block;
   max-width: 50em;
+  display: flex;
+}
+
+.img-flex {
+  display: block;
+  flex-wrap: wrap;
+  width: 50;
+  align-items: center;
 }
